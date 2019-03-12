@@ -14,6 +14,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
+import { InterestsComponent } from './interests/interests.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HomeComponent } from './home/home.component';
     ProjectsComponent,
     ContactComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    InterestsComponent
   ],
   imports: [
     BrowserModule,

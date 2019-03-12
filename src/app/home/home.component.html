@@ -1,17 +1,30 @@
-<div class="tree">
-  <ul>
-    <li>
-      <button (click)="firstClick()"><img src="../../assets/pictures/dominik.jpg" width="100px"></button>
-      <ul [class.draw]="showTree">
-        <li><a href="/about/news">New technology</a></li>
-        <li><a href="/about/games">Computer games</a></li>
-        <li><a href="/about/skates">Skating</a></li>
-        <li><a href="/about/guitar">Guitar play</a></li>
-        <li><a href="/about/books">Read books</a></li>
-        <li><a href="/about/cooking">Cooking</a></li>
-        <li><a href="/about/draw">Drawing</a></li>
-      </ul>
-    </li>
-  </ul>
+<div id="home_page">
+  <header>
+    <div class="container">
+      <nav >
+        <ul>
+          <li><a [routerLink]="['/about']" routerLinkActive="router-link-active" >about</a></li>
+          <li><a [routerLink]="['/school']" routerLinkActive="router-link-active" >school</a></li>
+          <li><a [routerLink]="['/experiance']" routerLinkActive="router-link-active" >experiance</a></li>
+          <li><a [routerLink]="['/skills']" routerLinkActive="router-link-active" >skills</a></li>
+          <li><a [routerLink]="['/projects']" routerLinkActive="router-link-active" >projects</a></li>
+          <li><a [routerLink]="['/interests']" routerLinkActive="router-link-active" >interests</a></li>
+          <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active" >contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="cloud">
+    <img class="center_img" src="">
+  </div>
+
+  <div id="smoke">
+    <img class="center_img" src="../../assets/pictures/smoke.png">
+  </div>
+
+  <div id="face">
+    <img class="center_img" src="../../assets/pictures/face.png">
+  </div>
 
 </div>

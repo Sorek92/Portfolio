@@ -1,0 +1,185 @@
+
+#home_page {
+    padding: 0;
+    margin:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, #588282, #d9c192);
+    background-size: cover;
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    display:block; 
+    position:absolute; 
+    overflow:auto;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.container ul{
+    list-style-type: none;  
+    background: url(../../assets/pictures/cloud.png) no-repeat center center;
+
+    -o-background-size:35% auto;
+    -webkit-background-size:35% auto;
+    -moz-background-size:35% auto;
+    background-size:35% auto;
+    
+}
+
+.container ul li a {
+    text-decoration: none;   
+    font-size: 24px;
+}
+
+.container ul li:nth-child(even){
+    text-align: left;
+}
+
+.container ul li:nth-child(odd){
+    text-align: right;
+}
+
+.container ul li:first-child {
+    text-align: center;
+}
+
+.container ul li:last-child {
+    text-align: center;
+}
+
+
+#cloud .center_img {
+    width: 50%;
+    position: absolute;
+    opacity: 1;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+ /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    #home_page .container {
+        width: 80%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container ul {
+        width: 40%;
+        margin: auto;
+    }
+    
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+    
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+/*
+    #home_page {
+        width: 100%;
+        height: 100%;
+    }
+
+    #cloud {
+        display: none;
+    }
+
+    #smoke {
+        display: none;
+    }
+    
+    #face {
+        
+    }
+
+    #face .center_img{
+        width: 80%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+    }
+
+*/
+    
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    
+    
+}
+
+  /* 
+    ##Device - not 
+    ##Screen = B/w to 320px
+  */
+
+@media (max-width: 319px) {
+    * {
+        display: none;
+    }
+
+    *:after {
+        content: "Not working, too small screen";
+    }
+}
