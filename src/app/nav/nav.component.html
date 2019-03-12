@@ -1,3 +1,15 @@
-<p>
-  nav works!
-</p>
+<header>
+  <div class="container">
+    <a [routerLink]="['/']" class="logo-left">{{ appTitle }}</a>
+    <nav class='nav-right'>
+      <ul>
+        <li><a [routerLink]="['/about']" routerLinkActive="router-link-active" >O mnie</a></li>
+        <li><a [routerLink]="['/school']" routerLinkActive="router-link-active" >Szkoła</a></li>
+        <li><a [routerLink]="['/experiance']" routerLinkActive="router-link-active" >Doświadczenie</a></li>
+        <li><a [routerLink]="['/skills']" routerLinkActive="router-link-active" >Wykształcenie</a></li>
+        <li><a [routerLink]="['/projects']" routerLinkActive="router-link-active" >Projekty</a></li>
+        <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active" >Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
