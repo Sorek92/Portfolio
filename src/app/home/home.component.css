@@ -1,10 +1,10 @@
-
 #home_page {
     padding: 0;
     margin:0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom right, #588282, #d9c192);
+    background: linear-gradient(to bottom right, #d9c192, #245757, #B5C7C7);
+    border-radius: 0 40% 0 40%;
     background-size: cover;
     -moz-background-size: cover; 
     -o-background-size: cover; 
@@ -12,20 +12,18 @@
     position:absolute; 
     overflow:auto;
 }
-
-.container {
+/* 
+#home_page .container {
     padding-top: 50px;
-}
-
-.container ul{
-    list-style-type: none;  
     background: url(../../assets/pictures/cloud.png) no-repeat center center;
-
     -o-background-size:35% auto;
     -webkit-background-size:35% auto;
     -moz-background-size:35% auto;
     background-size:35% auto;
-    
+} */
+
+.container ul{
+    list-style-type: none;      
 }
 
 .container ul li a {
@@ -61,6 +59,18 @@
     bottom: 0;
 }
 
+#face .center_img {
+  width: 25%;
+  position: absolute;
+  opacity: 1;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
  /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -76,6 +86,20 @@
         left: 0;
         right: 0;
         bottom: 0;
+    }
+
+    #home_page #face {
+        width: 40%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .center_img {
+        width: 20%;
     }
 
     .container ul {
@@ -165,7 +189,13 @@
   
 @media (min-width: 320px) and (max-width: 480px) {
     
-    
+    #home_page {
+      display: block;
+    }
+
+    #home_page .container {
+      width: 100%;
+    }
     
 }
 
