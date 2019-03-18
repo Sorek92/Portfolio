@@ -74,10 +74,75 @@
   max-height: 60%;
 }
 
+/* 
+  ##Device = Desktops
+  ##Screen = 1921px to higher resolution desktops
+*/
+@media (min-width: 1921px) {
+  a {
+    font-size: 2vw;
+    padding: 10px;
+  }
+  
+    #home_page #cloud .container {
+        padding: 10%;
+
+    }
+
+    .container ul {
+      text-align: center;
+    }
+
+    #cloud .center_img{
+      top: 0;
+      width: 30%;
+    }
+
+    #smoke .center_img {
+      top: 0;
+      bottom: 0;
+      width: 15%;
+    }
+    
+    #face .center_img {
+      bottom: 0;
+      width: 20%;
+    }
+
+    #face .left_top_media {
+      margin: 10%;
+      width: 10%;
+      position: absolute;
+    }
+
+    #face .left_bottom_media {
+      margin: 10%;
+      width: 10%;
+      position: absolute;
+      bottom: 0;
+    }
+
+    #face .right_top_media {
+      margin: 10%;
+      width: 10%;
+      position: absolute;
+      right: 0;
+    }
+
+    #face .right_bottom_media {
+      margin: 10%;
+      width: 10%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+}
+
+
 
  /* 
   ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
+  ##Screen = 1281px to 1920px
 */
 
 @media (min-width: 1281px) and (max-width: 1920px) {
