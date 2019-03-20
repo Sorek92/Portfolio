@@ -5,7 +5,7 @@ import { slideInAnimation } from '../app/animations';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   animations: [
     slideInAnimation
     // animation triggers go here
